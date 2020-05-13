@@ -17,14 +17,14 @@
                 border: 1px solid black;
                 height: 4rem;
             }
-            .logo {
+            /* .logo {
                 display: none;
             }
             @media (min-width: 768px) {
                 .logo {
                     display: block;
                 }
-             }
+             } */
              .navigation {
                  border: 1px solid black;
                  width: 16rem;
@@ -49,26 +49,27 @@
         </style>
     </head>
     <body class="h-100">
-        <div class="container-fluid h-100">
-            <div class="row nav">
-                <div class="col-3 add-border">
+        <div class="container-fluid h-100" style="overflow-x: hidden">
+            <div class="row flex-nowrap nav">
+                <div class="col-3 add-border" style="min-width: 160px;">
                     <div class="row h-100">
-                        <div class="col-md d-flex justify-content-center align-items-center add-border">
+                        <div class="col-md d-flex justify-content-start align-items-center add-border">
                             <div class="menu-icon">
                                 <div class="menu-icon__el"></div>
                                 <div class="menu-icon__el"></div>
                                 <div class="menu-icon__el"></div>
                             </div>
+                            <div class="ml-4 add-border logo">CRODA</div>
                         </div>
-                        <div class="col add-border logo">CRODA</div>
+                        <!-- <div class="col add-border logo">CRODA</div> -->
                     </div>
                 </div>
                 <div class="col-9 add-border">
                     Title
                 </div>
             </div>
-            <div class="row my-style my-row">
-                <div class="col-3 add-border px-0">
+            <div class="row my-style flex-nowrap my-row">
+                <div class="col-3 add-border px-0" style="min-width: 160px;">
                     <nav class="navigation"></nav>
                 </div>
                 <div class="col-9">Content</div>
